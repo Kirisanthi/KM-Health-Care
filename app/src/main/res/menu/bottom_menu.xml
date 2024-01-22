@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_menu"
+        android:title="Bookings"
+        android:icon="@drawable/baseline_payments_24"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/bottom_profile"-->
+<!--        android:title="Profile"-->
+<!--        android:icon="@drawable/icons8_add_administrator_50"/>-->
+
+<!--    <item-->
+<!--        android:title=""-->
+<!--        android:enabled="true" />-->
+
+    <item
+        android:id="@+id/bottom_feedback"
+        android:title="Feedback"
+        android:icon="@drawable/icons8_feedback_50"/>
+
+
+    <item
+        android:id="@+id/bottom_home"
+        android:title="Doctors list"
+        android:icon="@drawable/baseline_home_work_24"/>
+</menu>

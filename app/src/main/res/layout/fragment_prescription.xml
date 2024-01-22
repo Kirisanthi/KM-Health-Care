@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.health.kmhealthcare.PrescriptionFragment"
+>
+
+
+<TextView
+    android:id="@+id/tvprescriptionhead"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+    android:text="Add Prescription"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.082"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tvprescriptionhead2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    app:boxStrokeWidth="2dp"
+    app:boxCornerRadiusBottomEnd="@dimen/til_radius"
+    app:boxCornerRadiusBottomStart="@dimen/til_radius"
+    app:boxCornerRadiusTopEnd="@dimen/til_radius"
+    app:boxCornerRadiusTopStart="@dimen/til_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvprescriptionhead"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Id:"
+        android:textSize="18sp"
+        android:layout_marginStart="40dp"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/paAppoID"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginStart="@dimen/start_end_margin"
+    android:layout_marginEnd="@dimen/start_end_margin"
+    android:layout_marginTop="10dp"
+    app:boxStrokeWidth="2dp"
+    app:boxCornerRadiusBottomEnd="@dimen/til_radius"
+    app:boxCornerRadiusBottomStart="@dimen/til_radius"
+    app:boxCornerRadiusTopEnd="@dimen/til_radius"
+    app:boxCornerRadiusTopStart="@dimen/til_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvprescriptionhead2"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+
+    <EditText
+        android:id="@+id/bookingIdEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="18dp"
+        android:hint="Enter 4-digit Booking ID"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tvprescriptionhead3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    app:boxStrokeWidth="2dp"
+    app:boxCornerRadiusBottomEnd="@dimen/til_radius"
+    app:boxCornerRadiusBottomStart="@dimen/til_radius"
+    app:boxCornerRadiusTopEnd="@dimen/til_radius"
+    app:boxCornerRadiusTopStart="@dimen/til_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/paAppoID"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prescription:"
+        android:textSize="18sp"
+        android:layout_marginStart="40dp"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/paPrescription"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/start_end_margin"
+    android:layout_marginEnd="@dimen/start_end_margin"
+    android:layout_marginTop="5dp"
+    app:boxStrokeWidth="2dp"
+    app:boxCornerRadiusBottomEnd="@dimen/til_radius"
+    app:boxCornerRadiusBottomStart="@dimen/til_radius"
+    app:boxCornerRadiusTopEnd="@dimen/til_radius"
+    app:boxCornerRadiusTopStart="@dimen/til_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvprescriptionhead3"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+    <EditText
+        android:id="@+id/prescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Enter prescription"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:inputType="text"
+        android:textSize="18dp"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/submitPrescriptionButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/paPrescription"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginEnd="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/button_bg"
+    android:text="Save Prescription"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    android:onClick="saveProfile"
+    />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

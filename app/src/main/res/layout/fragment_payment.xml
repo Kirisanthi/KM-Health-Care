@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginTop="70dp"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/paymentInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Payment Details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/paymentInfoTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Can Pay Now..."
+        android:textSize="18sp"
+        android:textColor="@color/blue_4"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/editTextYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Payment Year"
+        android:inputType="numberDecimal"/>
+
+    <!-- EditText Fields -->
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/editTextCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/editTextExpiryDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry Date (MM/YY)"
+        android:inputType="number"/>
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/editTextCVC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CVC"
+        android:inputType="number"/>
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/editTextCardHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cardholder Name"
+        android:inputType="textPersonName"/>
+
+    <!-- Submit Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+    android:layout_marginTop="20dp">
+
+    <Button
+        android:id="@+id/buttonSubmitCardDetails"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Add Card"
+        android:backgroundTint="@color/blue_4"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+</LinearLayout>
+
+</LinearLayout>

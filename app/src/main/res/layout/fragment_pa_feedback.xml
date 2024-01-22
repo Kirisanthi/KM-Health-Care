@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardBackgroundColor="#C4EFEDED"
+    card_view:cardElevation="4dp"
+    android:padding="8dp"
+    android:layout_marginTop="100dp"
+    android:paddingBottom="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.health.kmhealthcare.PaFeedbackFragment"
+       >
+
+        <!-- ... Your existing layout content here ... -->
+
+<TextView
+    android:id="@+id/tvfeedbackhead"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:text="Give Your Feedback Freely"
+    android:textColor="@color/black"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.082"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginStart="20dp"/>
+
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tvfeedbackhead2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    app:boxStrokeWidth="2dp"
+    app:boxCornerRadiusBottomEnd="@dimen/til_radius"
+    app:boxCornerRadiusBottomStart="@dimen/til_radius"
+    app:boxCornerRadiusTopEnd="@dimen/til_radius"
+    app:boxCornerRadiusTopStart="@dimen/til_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvfeedbackhead"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rating:"
+        android:textSize="18sp"
+        android:layout_marginStart="40dp"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/paFeedbackStart"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginStart="@dimen/start_end_margin"
+    android:layout_marginEnd="@dimen/start_end_margin"
+    android:layout_marginTop="10dp"
+    app:boxStrokeWidth="2dp"
+    app:boxCornerRadiusBottomEnd="@dimen/til_radius"
+    app:boxCornerRadiusBottomStart="@dimen/til_radius"
+    app:boxCornerRadiusTopEnd="@dimen/til_radius"
+    app:boxCornerRadiusTopStart="@dimen/til_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tvfeedbackhead2"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvfeedbackhead2"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"/>
+
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tvopinionhead3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    app:boxStrokeWidth="2dp"
+    app:boxCornerRadiusBottomEnd="@dimen/til_radius"
+    app:boxCornerRadiusBottomStart="@dimen/til_radius"
+    app:boxCornerRadiusTopEnd="@dimen/til_radius"
+    app:boxCornerRadiusTopStart="@dimen/til_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/paFeedbackStart"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Opinion:"
+        android:textSize="18sp"
+        android:layout_marginStart="40dp"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/paOpinion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/start_end_margin"
+    android:layout_marginEnd="@dimen/start_end_margin"
+    android:layout_marginTop="5dp"
+    app:boxStrokeWidth="2dp"
+    app:boxCornerRadiusBottomEnd="@dimen/til_radius"
+    app:boxCornerRadiusBottomStart="@dimen/til_radius"
+    app:boxCornerRadiusTopEnd="@dimen/til_radius"
+    app:boxCornerRadiusTopStart="@dimen/til_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvopinionhead3"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    >
+    <EditText
+        android:id="@+id/etpaOpinion"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Your Feedback"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="40dp"
+        android:inputType="text"
+        android:textSize="18dp"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/paOpinion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_bg"
+            android:text="Save Feedback"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:onClick="saveProfile"
+            />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

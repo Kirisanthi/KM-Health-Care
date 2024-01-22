@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "174901649172",
+    "project_id": "mkmedicalclinic-1d41e",
+    "storage_bucket": "mkmedicalclinic-1d41e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174901649172:android:e01f72d283527b6e046c01",
+        "android_client_info": {
+          "package_name": "com.health.kmhealthcare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnJZprrtWnT8AlsfzyVjgsqL7X64zVKJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174901649172:android:793c9e7c04596593046c01",
+        "android_client_info": {
+          "package_name": "com.example.mkmedicalclinic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnJZprrtWnT8AlsfzyVjgsqL7X64zVKJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
